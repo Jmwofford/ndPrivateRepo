@@ -10,28 +10,19 @@
   <body>
   <h2> Login : Existing User </h2>
     <form action="/sessions" method="POST">
-    
-    <input type="hidden"
-     name="authenticity_token"
-      value="<%=form_authenticity_token%>">
-
-
-
-
-
+    <input type="hidden"name="authenticity_token"value="<%=form_authenticity_token%>">
       <input type="email" name="login[email]" placeholder="email">
       <input type="password" name="login[password]" placeholder="password">
-
       <input type="submit" name="submit" class="submit">
     </form>
 ------------------------------->>> 
  <h2> Register: New User </h2>
     <form action="/users" method="POST">
-      <input type="hidden">
-      <input type="name">
-      <input type="email">
-      <input type="password">
-      <input type="password">
+      <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+      <input type="name" name="user[name]" placeholder="name">
+      <input type="email" name="user[email]" placeholder="email">
+      <input type="password" name="user[password]" placeholder="password">
+      <input type="password" name="user[password_confirmation" placeholder="password_confirmation">
       <input type="submit">
     </form>
 
