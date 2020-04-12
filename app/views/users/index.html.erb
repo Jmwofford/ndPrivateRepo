@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="">
   </head>
   <body>
+  <div class="parent">
+  
+  
+
   <h2> Login : Existing User </h2>
     <form action="/sessions" method="POST">
     <input type="hidden"name="authenticity_token"value="<%=form_authenticity_token%>">
@@ -15,7 +19,12 @@
       <input type="password" name="login[password]" placeholder="password">
       <input type="submit" name="submit" class="submit">
     </form>
-------------------------------->>> 
+
+
+<img class="dpic" src="https://78.media.tumblr.com/7ccef687fea3758ba8912142a5deb2c3/tumblr_oqxrawjrvk1qbmm1co1_500.gif">
+
+
+
  <h2> Register: New User </h2>
     <form action="/users" method="POST">
       <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
@@ -26,7 +35,7 @@
       <input type="submit">
     </form>
 
-
+</div>
 
 
 
@@ -34,4 +43,9 @@
 
     <script src="" ></script>
   </body>
+
+
+
+
+
 </html>

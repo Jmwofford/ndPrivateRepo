@@ -1,3 +1,26 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+  height: 100vh;
+}
+.parent {
+  border: solid black;
+  padding: 1em;
+  text-align: center;
+}
+.dpic {
+  height: 250px;
+  border: solid black;
+  padding: 12px;
+  border-radius: 50%;
+  margin: 10px;
+}
+input {
+  text-align: center;
+  font-family: serif;
+  border-width: 1px;
+  font-size: 16px;
+  border: solid black;
+  margin: 2px;
+}
