@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   def index 
+    current_user
   end
 
   def create 
@@ -11,8 +12,9 @@ class UsersController < ApplicationController
       flash[:register_errors] = user.errors.full_messages
       redirect_to '/'
   end
+end
   private
     def user_params
-      params.require(:user).perrmit(:email,:password, :password_conformation)
+      params.require(:user).permit(:email,:password, :password_conformation)
     end
 end

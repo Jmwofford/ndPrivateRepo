@@ -1,3 +1,137 @@
 // Place all the styles related to the Ninjas controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+  height: 300vh;
+  background-color: slategrey;
+  font-family: serif;
+}
+.mainNav {
+  // border: solid black;
+  height: 55px;
+  width: 100%;
+  padding: 6px;
+  display: flex;
+}
+.navBtn {
+  border: solid black;
+  padding: 8px;
+  text-align: center;
+  height: 22px;
+  width: 20%;
+  border-width: 1px;
+  border-radius: 25px;
+  margin: 2px;
+}
+.navBtn:hover {
+  background-color: grey;
+  color: white;
+  border: solid black;
+  padding: 8px;
+  text-align: center;
+  height: 22px;
+  border-width: 1px;
+  border-radius: 25px;
+  margin: 6px;
+  transition: 1.5s;
+}
+.para {
+  border: solid blue;
+  position: fixed;
+  margin: 225px;
+  padding: 1em;
+  border-radius: 50%;
+}
+.para:hover {
+  border: solid blue;
+  position: fixed;
+  margin: 225px;
+  padding: 1em;
+  background-color: red;
+  border-radius: 50%;
+}
+.dic_pic {
+  height: 80px;
+  width: 50;
+  // position: absolute;
+}
+.area_container {
+  border: solid black;
+  height: 460vh;
+  padding: 1em;
+  background-color: black;
+}
+.main-view {
+  border: solid black;
+  height: 650px;
+  margin: 15px;
+  padding: 20px;
+  background-image: url("https://cdn.dribbble.com/users/1783653/screenshots/4504180/commit_to_be_fit.gif");
+  background-size: cover;
+}
+.midFlex {
+  width: 100%;
+  height: 50px;
+  text-align: right;
+  padding-top: 15px;
+}
+.lower_inner {
+  border: solid blue;
+  width: 40%;
+  height: 50px;
+  text-align: center;
+  padding-top: 15px;
+  margin-left: 40px;
+}
+.view_player {
+  background-color: black;
+  border: solid green;
+  text-align: center;
+  color: white;
+}
+.video {
+  width: 30%;
+  height: 350px;
+  margin-top: 12px;
+  text-align: center;
+}
+.nd_logo {
+  border: solid black;
+  border-radius: 50px;
+  // padding-left: 30%;
+  background-image: url("https://media.giphy.com/media/pF88GWa3H9lh6/giphy.gif");
+  background-size: cover;
+  text-align: center;
+  animation: helicopter 5s ease-in 0.5s infinite;
+  transition: 2s;
+}
+
+@keyframes helicopter {
+  0% {
+    margin-left: 40px;
+  }
+  20% {
+  }
+  50% {
+    margin-left: 800px;
+  }
+  80% {
+    margin-left: 40px;
+  }
+  100% {
+    margin-right: 200px;
+  }
+}
+li {
+  border: solid white;
+  border-radius: 25px;
+  margin: 5%;
+  padding: 9px;
+}
+li:hover {
+  border: solid white;
+  border-radius: 25px;
+  margin: 5%;
+  padding: 9px;
+  background-color: green;
+}
